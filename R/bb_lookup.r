@@ -45,7 +45,7 @@ bb_lookup <- function(query, viewbox = NULL) {
     }
   }
 
-  res <- httr::GET("https://nominatim.openstreetmap.org",
+  res <- httr::GET("http://nominatim-c48ced7c.c4e6bb8b.svc.dockerapp.io:8080",
              query=list(q=query,
                         viewbox=viewbox,
                         format='json'))
